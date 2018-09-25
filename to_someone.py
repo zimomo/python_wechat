@@ -33,7 +33,7 @@ def SendChatRoomsMsg(gname, context):
 
     global username
 
-    myroom = inchat.search_chatrooms(name=gname)
+    myroom = itchat.search_chatrooms(name=gname)
 
     for room in myroom:
         if room['NickName'] == gname:
