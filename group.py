@@ -12,7 +12,7 @@ def group_text(msg):
             from_group = g['UserName']
             for menb in g['MemberList']:
                 #print(menb['NickName'])
-                if menb['NickName'] == "张利晓":#从群成员列表找到用户,只转发他的消息
+                if menb['NickName'] == "hhh":#从群成员列表找到用户,只转发他的消息
                     from_user = menb['UserName']
                     break
         if g['NickName'] == 'hhh':#把消息发到这个群
