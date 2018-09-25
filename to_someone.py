@@ -24,7 +24,7 @@ from itchat.content import *
 #         else:
 #            print('No groups found')
 
-gname = '狗年旺德福'
+gname = 'hhh'
 context = '世界人民大团结万岁~~~（破音~~~）'
 
 def SendChatRoomsMsg(gname, context):
@@ -40,7 +40,7 @@ def SendChatRoomsMsg(gname, context):
             username = room['UserName']
             itchat.send_msg(context, username)
         else:
-            print('没找到群')
+            print('nothing')
 
 if __name__ == '__main__':
     itchat.auto_login()
