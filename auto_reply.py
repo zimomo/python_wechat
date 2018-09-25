@@ -12,7 +12,7 @@ def text_reply(msg):
                         (time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(msg['CreateTime'])),
                          msg['User']['NickName'],
                          msg['Text']), 'filehelper')
-        # 回复给好友
+        # 回复给好友 
         return u'[自动回复]诚招暖床小妹数枚。\n已经收到您的报名信息信息：%s\n' % (msg['Text'])
 
 if __name__ == '__main__':
