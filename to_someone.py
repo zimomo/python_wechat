@@ -35,13 +35,13 @@ def SendChatRoomsMsg(gname, context):
 
     myroom = inchat.search_chatrooms(name=gname)
 
-    for room in myroom
+    for room in myroom:
         if room['NickName'] == gname:
             username = room['UserName']
             itchat.send_msg(context, username)
         else:
             print('没找到群')
-            
+
 if __name__ == '__main__':
     itchat.auto_login()
 
