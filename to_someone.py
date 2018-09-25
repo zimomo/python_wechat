@@ -25,7 +25,7 @@ from itchat.content import *
 #            print('No groups found')
 
 gname = '狗年旺德福'
-contest = '世界人民大团结万岁~~~（破音~~~）'
+context = '世界人民大团结万岁~~~（破音~~~）'
 
 def SendChatRoomsMsg(gname, context):
     #获取群组相关信息(注意最好是报讯在通讯录里的);
