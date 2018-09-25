@@ -1,8 +1,7 @@
 #coding=utf8
 import itchat
 
-from itchat.content 
-import *
+from itchat.content import *
  
  
 gname = '狗年旺德福'
