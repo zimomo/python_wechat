@@ -24,7 +24,7 @@ from itchat.content import *
 #         else:
 #            print('No groups found')
 
-gname = '狗年我那个德福'
+gname = '狗年旺德福'
 contest = '世界人民大团结万岁~~~（破音~~~）'
 
 def SendChatRoomsMsg(gname, context):
