@@ -1,6 +1,8 @@
 #coding=utf8
 import itchat
-from itchat.content import *
+
+from itchat.content 
+import *
  
  
 gname = '狗年旺德福'
@@ -11,18 +13,18 @@ def SendChatRoomsMsg(gname, context):
     myroom = itchat.get_chatrooms(update=True)
     # myroom = itchat.get_chatrooms()
     #定义全局变量（也可以不定义）
-     global username
-     # 传入指定群名进行搜索，之所以搜索，是因为群员的名称信息也在里面
-     myroom = itchat.search_chatrooms(name=gname)
-     for room in myroom:
+    global username
+    # 传入指定群名进行搜索，之所以搜索，是因为群员的名称信息也在里面
+    myroom = itchat.search_chatrooms(name=gname)
+    for room in myroom:
         # print(room)
         #遍历所有NickName为键值的信息进行匹配群名
         if room['NickName'] == gname:
            username = room['UserName']
             # 得到群名的唯一标识，进行信息发送
-            itchat.send_msg(context, username)
+           itchat.send_msg(context, username)
         else:
-            print('No groups found')
+           print('No groups found')
 
 
 
