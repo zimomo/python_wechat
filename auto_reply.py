@@ -13,7 +13,7 @@ def text_reply(msg):
                          msg['User']['NickName'],
                          msg['Text']), 'filehelper')
         # 回复给好友
-        return u'[自动回复]您好，我现在有事不在，一会再和您联系。\n已经收到您的的信息：%s\n' % (msg['Text'])
+        return u'[自动回复]诚招暖床小妹数枚。\n已经收到您的报名信息信息：%s\n' % (msg['Text'])
 
 if __name__ == '__main__':
     itchat.auto_login()
