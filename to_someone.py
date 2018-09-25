@@ -47,5 +47,5 @@ if __name__ == '__main__':
 
     SendChatRoomsMsg(gname, context)
     # 获取自己的UserName
-    myUserName = itchat.get_friends(update=True)[0]["UserName"]
+    #myUserName = itchat.get_friends(update=True)[0]["UserName"]
     itchat.run()
