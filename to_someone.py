@@ -1,6 +1,5 @@
-#coding=utf8
-
-import itchat
+# coding:utf-8
+import itchat
 from itchat.content import *
  
  
