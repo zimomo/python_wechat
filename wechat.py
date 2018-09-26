@@ -8,7 +8,7 @@ while True:
 		myself = bot.self
 		# 查找昵称为'乙醚。'的好友
 		#my_friend = bot.friends().search(u'小小世界')[0]
-		my_group = bot.groups().search(u'hhh')[0]
+		my_group = bot.groups().search(u'狗年旺德福')[0]
 		print(my_group)
 		#my_friend.send('Hello, WeChat!')
 		content = '我爱北京天安门';
