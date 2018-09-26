@@ -24,7 +24,7 @@ def send_msg():
         # 添加朋友微信昵称
         friend = bot.friends().search(u'丽*smile')[0]
         friend.send(get_msg())
-            except:pass
+        except:pass
 
 
 if __name__ == '__main__':
