@@ -4,7 +4,6 @@ import time
 bot = Bot(console_qr=True, cache_path=True)
 
 print(bot)
-print(bot['Bot'])
 # 机器人账号自身
 while True:
 	if bot is not None:
