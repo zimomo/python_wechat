@@ -13,7 +13,8 @@ def get_msg():
     html = h.text
     news_bf = BeautifulSoup(html,"html.parser")
     msg = news_bf.find('div', class_='pic_text1')
-    news = msg.text
+    #news = msg.text
+    news = '我爱北京天安门，天安门加炮楼'
     # print(msg)
     # print(news)
     return news
@@ -22,7 +23,7 @@ def get_msg():
 def send_msg():
     try:
         # 添加朋友微信昵称
-        friend = bot.friends().search(u'丽*smile')[0]
+        friend = bot.friends().search(u'冰糖葫芦娃哈哈~')[0]
         friend.send(get_msg())
     except:pass
 
