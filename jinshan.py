@@ -23,7 +23,7 @@ def send_news():
         t = Timer(6000000, send_news)#每86400秒（1天），发送1次，不用linux的定时任务是因为每次登陆都需要扫描二维码登陆，很麻烦的一件事，就让他一直挂着吧
         t.start()
     except:
-        my_friend = bot.friends().search('奶瓶仔')[0]#你的微信名称，不是微信帐号。
+        my_friend = bot.friends().search('丶子沫沫')[0]#你的微信名称，不是微信帐号。
         my_friend.send(u"今天消息发送失败了")
 if __name__ == "__main__":
     send_news()
