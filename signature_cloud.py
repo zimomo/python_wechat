@@ -2,7 +2,15 @@
 import itchat
 import re
 
-itchat.login()
+ # 登录微信enableCmdQR表示的是当完全的命令行界面可以弹出文本绘制的二维码
+ # 可以让你得以扫码登录，hotReload表示的连续几次运行不需要再次扫码
+ #itchat.auto_login(enableCmdQR=True, hotReload=True)
+ # 调用函数发送群消息
+ #SendChatRoomsMsg(gname, context)
+ # 保持登录状态
+ #itchat.run()
+itchat.login(enableCmdQR=True, hotReload=True)
+itchat.run()
 friends = itchat.get_friends(update=True)[0:]
 tList = []
 for i in friends:
