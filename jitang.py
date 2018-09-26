@@ -1,3 +1,4 @@
+#coding=utf8
 import requests
 import wxpy
 from bs4 import BeautifulSoup

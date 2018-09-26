@@ -1,3 +1,4 @@
+#coding=utf8
 from __future__ import unicode_literals
 from threading import Timer
 from wxpy import *
