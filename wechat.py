@@ -6,7 +6,7 @@ bot = Bot(console_qr=True, cache_path=True)
 print(bot)
 # 机器人账号自身
 while True:
-	if bot is not None:
+	#if bot is not None:
 		#myself = bot.self
 		# 查找昵称为'乙醚。'的好友
 		#my_friend = bot.friends().search(u'小小世界')[0]
@@ -18,5 +18,5 @@ while True:
 		time.sleep(60)
 		# 向文件传输助手发送消息
 		#bot.file_helper.send('Hello from wxpy!')
-	else:
-		bot = Bot(console_qr=True, cache_path=True)
+	#else:
+		#bot = Bot(console_qr=True, cache_path=True)
