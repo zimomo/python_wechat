@@ -1,6 +1,7 @@
 #coding=utf8
 from wxpy import *
 import time
+from __future__ import unicode_literals
 bot = Bot(console_qr=True, cache_path=True)
 # 机器人账号自身
 while True:
