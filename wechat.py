@@ -11,12 +11,13 @@ while True:
 			myself = bot.self
 			# 查找昵称为'乙醚。'的好友
 			#my_friend = bot.friends().search(u'小小世界')[0]
-			# try:
-			# 	my_group = bot.groups().search(u'狗年旺德福')[0]
-			# except:
-			# 	bot = Bot(console_qr=True, cache_path=True)
-			# 	my_group = bot.groups().search(u'狗年旺德福')[0]
-			my_group = bot.groups().search(u'狗年旺德福')[0]	
+			try:
+				my_group = bot.groups().search(u'狗年旺德福')[0]
+			except:
+				# bot = Bot(console_qr=True, cache_path=True)
+				bot = Bot()
+				my_group = bot.groups().search(u'狗年旺德福')[0]
+				
 			print my_group, type(my_group)
 			print(my_group)
 			#my_friend.send('Hello, WeChat!')
