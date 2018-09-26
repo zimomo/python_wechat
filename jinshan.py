@@ -11,8 +11,10 @@ def get_news1():
 #获取金山词霸每日一句，英文和翻译
     url = "http://open.iciba.com/dsapi/"
     r = requests.get(url)
-    contents = r.json()['content']
-    translation= r.json()['translation']
+    #contents = r.json()['content']
+    contents = 'lll'
+    translation= '2222'
+    #translation= r.json()['translation']
     return contents,translation
 def send_news():
     try:
@@ -20,7 +22,8 @@ def send_news():
         my_friend.send(get_news1()[0])
         my_friend.send(get_news1()[1][5:])
         my_friend.send(u"以上是金山词霸每日一句，子沫沫正在轰炸你的微信！")
-        t = Timer(6000000, send_news)#每86400秒（1天），发送1次，不用linux的定时任务是因为每次登陆都需要扫描二维码登陆，很麻烦的一件事，就让他一直挂着吧
+        t = Timer(6, send_news)#每86400秒（1天），发送1次，不用linux的定时任务是因为每次登陆都需要扫描二维码登陆，很麻烦的一件事，就让他一直挂着吧
+        #t = Timer(6000000, send_news)#每86400秒（1天），发送1次，不用linux的定时任务是因为每次登陆都需要扫描二维码登陆，很麻烦的一件事，就让他一直挂着吧
         t.start()
     except:
         my_friend = bot.friends().search('丶子沫沫')[0]#你的微信名称，不是微信帐号。
