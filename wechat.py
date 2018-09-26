@@ -2,7 +2,7 @@
 from __future__ import unicode_literals
 from wxpy import *
 import time
-bot = Bot()
+bot = Bot(qr_path="qr.png",cache_path=True)
 print bot, type(bot)
 # 机器人账号自身
 while True:
@@ -15,7 +15,7 @@ while True:
 				my_group = bot.groups().search(u'狗年旺德福')[0]
 			except:
 				# bot = Bot(console_qr=True, cache_path=True)
-				bot = Bot()
+				bot = Bot(qr_path="qr.png",cache_path=True)
 				my_group = bot.groups().search(u'狗年旺德福')[0]
 				
 			print my_group, type(my_group)
