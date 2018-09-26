@@ -1,5 +1,6 @@
 #coding=utf8
 from wxpy import *
+import time
 bot = Bot(console_qr=True, cache_path=True)
 
 # 机器人账号自身
@@ -11,5 +12,7 @@ while True:
 
 	#my_friend.send('Hello, WeChat!')
 	my_group.send('Hello, WeChat!')
+	#休眠十秒
+	time.sleep(10)
 	# 向文件传输助手发送消息
 	#bot.file_helper.send('Hello from wxpy!')
