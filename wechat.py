@@ -51,7 +51,7 @@ while True:
 		#my_friend.send('Hello, WeChat!')
 		if len(_queue_shield_wechat) > 0:
 		#content = '住进布达拉宫，\n我是雪域最大的王。\n流浪在拉萨街头，\n我是世间最美的情郎。'
-			my_group.send(_queue_shield_wechat.encode('utf-8'))
+			my_group.send(unicode(dict[_queue_shield_wechat], 'utf-8'))
 		#休眠十秒
 		time.sleep(10)
 		# 向文件传输助手发送消息
