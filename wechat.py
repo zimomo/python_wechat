@@ -5,16 +5,16 @@
 from __future__ import unicode_literals
 from wxpy import *
 import time
-import redis
+#import redis
 
 
 
 
 
 bot = Bot(qr_path="qr.png",cache_path=True)
-shield_redis = redis.StrictRedis(host=redis_server[APPLICATION_ENV]["shield"]["host"],
-                                      port=redis_server[APPLICATION_ENV]["shield"]["port"],
-                                      password=redis_server[APPLICATION_ENV]["shield"]["password"])
+# shield_redis = redis.StrictRedis(host=redis_server[APPLICATION_ENV]["shield"]["host"],
+#                                       port=redis_server[APPLICATION_ENV]["shield"]["port"],
+#                                       password=redis_server[APPLICATION_ENV]["shield"]["password"])
 print bot, type(bot)
 
 #my_group = bot.groups().search(u'狗年旺德福')[0]
@@ -22,7 +22,7 @@ print bot, type(bot)
 #my_group.sen d(content)
 # 机器人账号自身
 #while True:
-if shield_redis is not None:
+if bot is not None:
 	print bot, type(bot)
 	myself = bot.self
 	# 查找昵称为'乙醚。'的好友
@@ -37,12 +37,12 @@ if shield_redis is not None:
 	print my_group, type(my_group)
 	print(my_group)
 
-	_queue_shield_wechat = shield_redis.blpop(redis_queue['shield']['queueShieldWechat'], 0)[1]
-	print(_queue_shield_wechat)
+	# _queue_shield_wechat = shield_redis.blpop(redis_queue['shield']['queueShieldWechat'], 0)[1]
+	# print(_queue_shield_wechat)
 	#my_friend.send('Hello, WeChat!')
-	if len (_queue_shield_wechat):
-		content = _queue_shield_wechat
-		my_group.send(content)
+	#if len (_queue_shield_wechat):
+	content = _queue_shield_wechat
+	my_group.send(content)
 	#休眠十秒
 	time.sleep(10)
 	# 向文件传输助手发送消息
