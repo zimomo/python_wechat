@@ -47,6 +47,4 @@ while True:
 			#bot.file_helper.send('Hello from wxpy!')
 		else:
 			#bot = Bot(console_qr=True, cache_path=True)s
-            shield_redis = redis.StrictRedis(host=redis_server["shield"]["host"],
-                                              port=redis_server["shield"]["port"],
-                                              password=redis_server["shield"]["password"])
+            shield_redis = redis.StrictRedis(host=redis_server["shield"]["host"],port=redis_server["shield"]["port"],password=redis_server["shield"]["password"])
