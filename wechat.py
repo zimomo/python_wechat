@@ -21,7 +21,7 @@ import redis
 
 
 
-bot = Bot(console_qr=True,cache_path=True)
+bot = Bot(console_qr=True,cache_path=None)
 # shield_redis = redis.StrictRedis(host=redis_server[APPLICATION_ENV]["shield"]["host"],
 #                                       port=redis_server[APPLICATION_ENV]["shield"]["port"],
 #                                       password=redis_server[APPLICATION_ENV]["shield"]["password"])
