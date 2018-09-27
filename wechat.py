@@ -17,7 +17,7 @@ shield_redis = redis.StrictRedis(host=redis_server[APPLICATION_ENV]["shield"]["h
                                       port=redis_server[APPLICATION_ENV]["shield"]["port"],
                                       password=redis_server[APPLICATION_ENV]["shield"]["password"])
 print bot, type(bot)
-
+print(shield_redis)
 #my_group = bot.groups().search(u'狗年旺德福')[0]
 #content = '我爱北京天安门';
 #my_group.sen d(content)
@@ -51,6 +51,6 @@ if shield_redis is not None:
 else:
 	print('ceshi')
 	#bot = Bot(console_qr=True, cache_path=True)
-    shield_redis = redis.StrictRedis(host=redis_server[APPLICATION_ENV]["shield"]["host"],
-                                  port=redis_server[APPLICATION_ENV]["shield"]["port"],
-                                  password=redis_server[APPLICATION_ENV]["shield"]["password"])
+    # shield_redis = redis.StrictRedis(host=redis_server[APPLICATION_ENV]["shield"]["host"],
+    #                               port=redis_server[APPLICATION_ENV]["shield"]["port"],
+    #                               password=redis_server[APPLICATION_ENV]["shield"]["password"])
