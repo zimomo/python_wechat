@@ -39,12 +39,12 @@ while True:
 	
 	try:
 		#my_group = bot.groups().search(u'1111')[0]
-		my_friend = bot.friends().search(u'丽＊ｓｍｉｌｅ')[0]
+		my_friend = bot.friends().search(u'丽*s m i l e')[0]
 	except:
 		bot = Bot(console_qr=True, cache_path=True)
 		#bot = Bot(console_qr=2,cache_path=True)
 		#my_group = bot.groups().search(u'1111')[0]
-		my_friend = bot.friends().search(u'丽＊ｓｍｉｌｅ')[0]
+		my_friend = bot.friends().search(u'丽*s m i l e')[0]
 	#my_group = bot.groups().search(u'1111')[0]	
 	#print my_group, type(my_group)
 	#print(my_group)
