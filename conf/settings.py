@@ -57,7 +57,8 @@ redis_server = {
 redis_queue = {
     "shield": {
         "queueShieldPack": "shield_queue_deploy_pack",
-        "queueShieldCode": "shield_queue_shield_code"
+        "queueShieldCode": "shield_queue_shield_code",
+        "queueShieldWechat": "shield_queue_screenshot_warn"
     }
 }
 
