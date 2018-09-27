@@ -23,7 +23,7 @@ print bot, type(bot)
 #my_group.sen d(content)
 # 机器人账号自身
 #while True:
-if bot is not None:
+if shield_redis is not None:
 	print bot, type(bot)
 	myself = bot.self
 	# 查找昵称为'乙醚。'的好友
@@ -49,6 +49,7 @@ if bot is not None:
 	# 向文件传输助手发送消息
 	#bot.file_helper.send('Hello from wxpy!')
 else:
+	print('ceshi')
 	bot = Bot(console_qr=True, cache_path=True)
     # shield_redis = redis.StrictRedis(host=redis_server[APPLICATION_ENV]["shield"]["host"],
     #                               port=redis_server[APPLICATION_ENV]["shield"]["port"],
