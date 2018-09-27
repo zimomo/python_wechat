@@ -46,9 +46,7 @@ while True:
 			# 向文件传输助手发送消息
 			#bot.file_helper.send('Hello from wxpy!')
 		else:
-			#bot = Bot(console_qr=True, cache_path=True)
-			shield_log.debug("db error, try again ......")
-            shield_log.debug("retry to connect redis......")
+			#bot = Bot(console_qr=True, cache_path=True)s
             shield_redis = redis.StrictRedis(host=redis_server["shield"]["host"],
                                               port=redis_server["shield"]["port"],
                                               password=redis_server["shield"]["password"])
