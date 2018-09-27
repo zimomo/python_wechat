@@ -52,7 +52,8 @@ while True:
 	# print len (_queue_shield_wechat)
 	# #my_friend.send('Hello, WeChat!')
 	# if len(_queue_shield_wechat) > 0:
-	content = '住进布达拉宫，\n我是雪域最大的王。\n流浪在拉萨街头，\n我是世间最美的情郎。'
+	#content = '住进布达拉宫，\n我是雪域最大的王。\n流浪在拉萨街头，\n我是世间最美的情郎。'
+	content = '1111111'
 	my_group.send(content)
 	#休眠十秒
 	time.sleep(10)
