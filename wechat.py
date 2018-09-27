@@ -27,7 +27,7 @@ shield_redis = redis.StrictRedis(host=redis_server[APPLICATION_ENV]["shield"]["h
                                       password=redis_server[APPLICATION_ENV]["shield"]["password"])
 print bot, type(bot)
 print(shield_redis)
-#my_group = bot.groups().search(u'落地页屏蔽预警群')[0]
+#my_group = bot.groups().search(u'(内)落地页屏蔽预警群')[0]
 #content = '我爱北京天安门';
 #my_group.sen d(content)
 # 机器人账号自身
@@ -38,12 +38,12 @@ while True:
 		# 查找昵称为'乙醚。'的好友
 		#my_friend = bot.friends().search(u'小小世界')[0]
 		try:
-			my_group = bot.groups().search(u'落地页屏蔽预警群')[0]
+			my_group = bot.groups().search(u'(内)落地页屏蔽预警群')[0]
 		except:
 			bot = Bot(console_qr=True, cache_path=True)
 			#bot = Bot(console_qr=2,cache_path=True)
-			my_group = bot.groups().search(u'落地页屏蔽预警群')[0]
-		#my_group = bot.groups().search(u'落地页屏蔽预警群')[0]	
+			my_group = bot.groups().search(u'(内)落地页屏蔽预警群')[0]
+		#my_group = bot.groups().search(u'(内)落地页屏蔽预警群')[0]	
 		print my_group, type(my_group)
 		print(my_group)
 
