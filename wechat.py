@@ -31,7 +31,7 @@ if bot is not None:
 		my_group = bot.groups().search(u'hhh')[0]
 	except:
 		# bot = Bot(console_qr=True, cache_path=True)
-		bot = Bot(qr_path="qr.png",cache_path=True)
+		bot = Bot(cache_path=True)
 		my_group = bot.groups().search(u'hhh')[0]
 	#my_group = bot.groups().search(u'狗年旺德福')[0]	
 	print my_group, type(my_group)
