@@ -47,6 +47,7 @@ while True:
 
 		_queue_shield_wechat = shield_redis.blpop(redis_queue['shield']['queueShieldWechat'], 0)[1]
 		print(_queue_shield_wechat)
+		print len (_queue_shield_wechat)
 		#my_friend.send('Hello, WeChat!')
 		if _queue_shield_wechat != '':
 		#content = '住进布达拉宫，\n我是雪域最大的王。\n流浪在拉萨街头，\n我是世间最美的情郎。'
