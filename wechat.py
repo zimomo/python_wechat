@@ -36,16 +36,17 @@ while True:
 	print bot, type(bot)
 	myself = bot.self
 	# 查找昵称为'乙醚。'的好友
-	#my_friend = bot.friends().search(u'小小世界')[0]
+	my_friend = bot.friends().search(u'丽*smile')[0]
 	try:
-		my_group = bot.groups().search(u'1111')[0]
+		#my_group = bot.groups().search(u'1111')[0]
 	except:
 		bot = Bot(console_qr=True, cache_path=True)
 		#bot = Bot(console_qr=2,cache_path=True)
-		my_group = bot.groups().search(u'1111')[0]
+		#my_group = bot.groups().search(u'1111')[0]
+		my_friend = bot.friends().search(u'丽*smile')[0]
 	#my_group = bot.groups().search(u'1111')[0]	
-	print my_group, type(my_group)
-	print(my_group)
+	#print my_group, type(my_group)
+	#print(my_group)
 
 	# _queue_shield_wechat = shield_redis.blpop(redis_queue['shield']['queueShieldWechat'], 0)[1]
 	# print(_queue_shield_wechat)
@@ -54,7 +55,7 @@ while True:
 	# if len(_queue_shield_wechat) > 0:
 	content = '住进布达拉宫，\n我是雪域最大的王。\n流浪在拉萨街头，\n我是世间最美的情郎。'
 	#content = '1111111'
-	my_group.send(content)
+	my_friend.send(content)
 	#休眠十秒
 	time.sleep(10)
 		# 向文件传输助手发送消息
