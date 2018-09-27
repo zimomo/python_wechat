@@ -3,6 +3,7 @@
 实时收集屏蔽警告数据并推送至指定微信群
 """
 from __future__ import unicode_literals
+from conf.settings import *
 from wxpy import *
 import time
 import redis
