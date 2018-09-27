@@ -5,10 +5,17 @@
 from __future__ import unicode_literals
 from conf.settings import *
 from wxpy import *
+import os
+import sys
+
 import time
 import redis
 
+curPath = os.path.abspath(os.path.dirname(__file__))
+rootPath = os.path.split(curPath)[0]
+sys.path.append(rootPath)
 
+reload(sys)
 
 
 
