@@ -50,7 +50,7 @@ if shield_redis is not None:
 	#bot.file_helper.send('Hello from wxpy!')
 else:
 	print('ceshi')
-	bot = Bot(console_qr=True, cache_path=True)
-    # shield_redis = redis.StrictRedis(host=redis_server[APPLICATION_ENV]["shield"]["host"],
-    #                               port=redis_server[APPLICATION_ENV]["shield"]["port"],
-    #                               password=redis_server[APPLICATION_ENV]["shield"]["password"])
+	#bot = Bot(console_qr=True, cache_path=True)
+    shield_redis = redis.StrictRedis(host=redis_server[APPLICATION_ENV]["shield"]["host"],
+                                  port=redis_server[APPLICATION_ENV]["shield"]["port"],
+                                  password=redis_server[APPLICATION_ENV]["shield"]["password"])
