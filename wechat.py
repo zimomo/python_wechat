@@ -1,4 +1,5 @@
-#coding=utf8
+#!/usr/bin/env python
+# -*- coding:utf-8 -*-
 """
 实时收集屏蔽警告数据并推送至指定微信群
 """
