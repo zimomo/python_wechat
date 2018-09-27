@@ -36,9 +36,10 @@ while True:
 	print bot, type(bot)
 	myself = bot.self
 	# 查找昵称为'乙醚。'的好友
-	my_friend = bot.friends().search(u'丽*smile')[0]
+	
 	try:
 		#my_group = bot.groups().search(u'1111')[0]
+		my_friend = bot.friends().search(u'丽*smile')[0]
 	except:
 		bot = Bot(console_qr=True, cache_path=True)
 		#bot = Bot(console_qr=2,cache_path=True)
