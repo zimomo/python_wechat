@@ -39,7 +39,7 @@ while True:
 		_queue_shield_wechat = shield_redis.blpop(redis_queue['shield']['queueShieldWechat'], 0)[1]
 		print(_queue_shield_wechat)
 		#my_friend.send('Hello, WeChat!')
-		content = _queue_shield_wechat;
+		content = _queue_shield_wechat
 		my_group.send(content)
 		#休眠十秒
 		time.sleep(10)
@@ -47,6 +47,6 @@ while True:
 		#bot.file_helper.send('Hello from wxpy!')
 	else:
 		#bot = Bot(console_qr=True, cache_path=True)s
-        shield_redis = redis.StrictRedis(host=redis_server["shield"]["host"],
-                                          port=redis_server["shield"]["port"],
-                                          password=redis_server["shield"]["password"])
+        shield_redis = redis.StrictRedis(host=redis_server[APPLICATION_ENV]["shield"]["host"],
+                                      port=redis_server[APPLICATION_ENV]["shield"]["port"],
+                                      password=redis_server[APPLICATION_ENV]["shield"]["password"])
