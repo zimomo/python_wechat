@@ -21,7 +21,7 @@ sys.setdefaultencoding('utf8')
 
 
 
-bot = Bot(console_qr=True,cache_path=True)
+bot = Bot(console_qr=True)
 shield_redis = redis.StrictRedis(host=redis_server[APPLICATION_ENV]["shield"]["host"],
                                       port=redis_server[APPLICATION_ENV]["shield"]["port"],
                                       password=redis_server[APPLICATION_ENV]["shield"]["password"])
@@ -34,7 +34,7 @@ print(shield_redis)
 while True:
 	if shield_redis is not None:
 		print bot, type(bot)
-		myself = bot.self
+		myself = bot.selfs
 		# 查找昵称为'乙醚。'的好友
 		#my_friend = bot.friends().search(u'小小世界')[0]
 		try:
