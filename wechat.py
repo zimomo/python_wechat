@@ -21,7 +21,7 @@ sys.setdefaultencoding('utf8')
 
 
 
-bot = Bot(console_qr=True,cache_path=None)
+bot = Bot(console_qr=True,cache_path=True)
 shield_redis = redis.StrictRedis(host=redis_server[APPLICATION_ENV]["shield"]["host"],
                                       port=redis_server[APPLICATION_ENV]["shield"]["port"],
                                       password=redis_server[APPLICATION_ENV]["shield"]["password"])
