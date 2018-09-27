@@ -57,7 +57,7 @@ while True:
 	#content = '1111111'
 	my_friend.send(content)
 	#休眠十秒
-	time.sleep(10)
+	time.sleep(2)
 		# 向文件传输助手发送消息
 		#bot.file_helper.send('Hello from wxpy!')
 	# else:
