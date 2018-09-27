@@ -5,16 +5,16 @@
 from __future__ import unicode_literals
 from wxpy import *
 import time
-#import redis
+import redis
 
 
 
 
 
 bot = Bot(console_qr=True,cache_path=True)
-# shield_redis = redis.StrictRedis(host=redis_server[APPLICATION_ENV]["shield"]["host"],
-#                                       port=redis_server[APPLICATION_ENV]["shield"]["port"],
-#                                       password=redis_server[APPLICATION_ENV]["shield"]["password"])
+shield_redis = redis.StrictRedis(host=redis_server[APPLICATION_ENV]["shield"]["host"],
+                                      port=redis_server[APPLICATION_ENV]["shield"]["port"],
+                                      password=redis_server[APPLICATION_ENV]["shield"]["password"])
 print bot, type(bot)
 
 #my_group = bot.groups().search(u'狗年旺德福')[0]
